@@ -21,6 +21,7 @@ def drift(x):
 
 def turning_points(x):
     """Count local maxima + minima."""
+    x = np.asarray(x)
     peaks, _ = find_peaks(x)
     troughs, _ = find_peaks(-x)
     return int(len(peaks) + len(troughs))
