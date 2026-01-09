@@ -1,0 +1,24 @@
+[project]
+name = "signal-scope"
+version = "0.1.0"
+description = "A tiny (<200 line) Python tool for analyzing time-series signals: trends, volatility, drift, regime shifts, anomalies."
+authors = [
+    { name="Ryan Sabouhi", email="your-email@example.com" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+keywords = ["timeseries", "signal processing", "analysis", "anomaly detection", "volatility"]
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scipy"
+]
+
+[project.urls]
+Homepage = "https://github.com/rjsabouhi/signal-scope"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
