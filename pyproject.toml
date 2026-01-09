@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "signal-scope"
 version = "0.1.0"
@@ -13,12 +17,9 @@ dependencies = [
     "numpy",
     "pandas",
     "matplotlib",
-    "scipy"
+    "scipy",
+    "hatchling>=1.27.0",
 ]
 
 [project.urls]
 Homepage = "https://github.com/rjsabouhi/signal-scope"
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"

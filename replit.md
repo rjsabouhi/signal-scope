@@ -10,10 +10,11 @@ A Python package for analyzing time-series signals with trend, volatility, drift
 ## Recent Changes
 - 2026-01-09: Initial package creation with all core modules
 - Fixed turning_points function to handle list inputs by converting to numpy array
+- Switched build backend from poetry-core to hatchling for proper PEP 621 compliance
 
 ## Project Structure
 ```
-├── pyproject.toml          # PEP 621 compliant package config (poetry-core backend)
+├── pyproject.toml          # PEP 621 compliant package config (hatchling backend)
 ├── README.md               # Package documentation
 ├── LICENSE                 # MIT License
 ├── signal_scope/           # Main package directory
